@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class java{
+    public static void main(String[] args){
+       Scanner b=new Scanner(System.in);
+       System.out.println("enter the limit1 :");
+       int lm=b.nextInt();
+       System.out.println("enter the limit 2 :");
+       int lm2=b.nextInt();
+        for(int i=1;i<=lm; i++){
+            System.out.println("outer loop"+i);
+                for(int j=1;j<=lm2;j++){
+                    System.out.println("INNER loop"+j);
+                }
+        }
+    }
+}
