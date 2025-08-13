@@ -1,0 +1,37 @@
+public class S {
+    public static void main(String[] args) {
+        String s = "Hello mr ";
+        String s2 = "java sundaresan";
+        System.out.println(s.length());
+        System.out.println(s.toUpperCase());
+        System.out.println(s.toLowerCase());
+        System.out.println(s.charAt(4));
+        System.out.println(s.substring(6));
+        System.out.println(s.substring(0,5));
+        System.out.println(s.replace("World", "Java"));
+        System.out.println(s.contains("Hello"));
+        System.out.println(s.equals("Hello World"));
+        System.out.println(s.equalsIgnoreCase("hello world"));
+        System.out.println(s.startsWith("Hello"));
+        System.out.println(s.endsWith("World"));
+        System.out.println(s.indexOf("o"));
+        System.out.println(s.lastIndexOf("o"));
+        System.out.println(s.trim());
+        System.out.println(s.concat("!!!"));
+        System.out.println(String.join("-", "one", "two","three"));
+        System.out.println(String.valueOf(123));
+        System.out.println(s.repeat(2));
+        System.out.println(s.replaceFirst("o", "O"));
+        System.out.println(s.replaceAll("o", "O"));
+        System.out.println(s.matches("Hello World"));
+        System.out.println(s.matches(".*World"));
+        System.out.println(s.split(" ")[0]);
+        System.out.println(s.split(" ")[1]);
+        System.out.println(String.format("Value: %d", 100));
+        System.out.println(s.compareTo(s2));
+        System.out.println(s.compareToIgnoreCase(s2));
+        System.out.println(s.toCharArray()[0]);;
+        System.out.println(s.codePointAt(0));
+        System.out.println(s.codePointCount(0, s.length()));
+    }
+}
