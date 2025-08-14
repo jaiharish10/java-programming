@@ -1,0 +1,13 @@
+class dad {
+    void eat() { System.out.println("Eating..."); }
+}
+class mom extends dad {
+    void fight() { System.out.println("Barking..."); }
+}
+public class Single {
+    public static void main(String[] args) {
+        Dog d = new Dog();
+        d.eat();
+        d.fight();
+    }
+}
