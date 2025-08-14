@@ -1,0 +1,17 @@
+class dad {
+    void eat() { System.out.println("Eating..."); }
+}
+class mom extends dad {
+    void sleep() { System.out.println("Barking..."); }
+}
+class sister extends dad {
+    void fight() { System.out.println("Weeping..."); }
+}
+public class Multi {
+    public static void main(String[] args) {
+        Puppy p = new Puppy();
+        p.eat();
+        p.sleep();
+        p.fight();
+    }
+}
