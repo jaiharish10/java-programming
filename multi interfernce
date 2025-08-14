@@ -1,0 +1,33 @@
+interface DadRole {
+    void work();
+}
+
+interface MomRole {
+    void cook();
+}
+
+class Son implements DadRole, MomRole {
+    public void work() { System.out.println("Son is working like Dad."); }
+    public void cook() { System.out.println("Son is cooking like Mom."); }
+    void playCricket() { System.out.println("Son is playing cricket."); }
+}
+
+class Daughter implements DadRole, MomRole {
+    public void work() { System.out.println("Daughter is working like Dad."); }
+    public void cook() { System.out.println("Daughter is cooking like Mom."); }
+    void dance() { System.out.println("Daughter is dancing."); }
+}
+
+public class FamilyMultipleInheritance {
+    public static void main(String[] args) {
+        Son s = new Son();
+        s.work();
+        s.cook();
+        s.playCricket();
+
+        Daughter d = new Daughter();
+        d.work();
+        d.cook();
+        d.dance();
+    }
+}
