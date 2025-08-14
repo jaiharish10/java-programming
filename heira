@@ -1,0 +1,27 @@
+class Dad {
+    void work() { System.out.println("Dad is working."); }
+}
+
+class Mom {
+    void cook() { System.out.println("Mom is cooking."); }
+}
+
+class Son extends Dad {
+    void playCricket() { System.out.println("Son is playing cricket."); }
+}
+
+class Daughter extends Dad {
+    void dance() { System.out.println("Daughter is dancing."); }
+}
+
+public class heir {
+    public static void main(String[] args) {
+        Son s = new Son();
+        s.work();
+        s.playCricket();
+
+        Daughter d = new Daughter();
+        d.work();
+        d.dance();
+    }
+}
